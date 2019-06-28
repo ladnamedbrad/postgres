@@ -61,10 +61,10 @@ RUN set -ex \
 		perl-utils \
 # configure: error: Perl module IPC::Run is required to run TAP tests
 		perl-ipc-run \
-#		perl-dev \
-#		python-dev \
-#		python3-dev \
-#		tcl-dev \
+		perl-dev \
+		python-dev \
+		python3-dev \
+		tcl-dev \
 		util-linux-dev \
 		zlib-dev \
 	\
@@ -99,13 +99,13 @@ RUN set -ex \
 		--with-libraries=/usr/local/lib \
 		\
 # these make our image abnormally large (at least 100MB larger), which seems uncouth for an "Alpine" (ie, "small") variant :)
-#		--with-krb5 \
-#		--with-gssapi \
-#		--with-ldap \
-#		--with-tcl \
-#		--with-perl \
-#		--with-python \
-#		--with-pam \
+		--with-krb5 \
+		--with-gssapi \
+		--with-ldap \
+		--with-tcl \
+		--with-perl \
+		--with-python \
+		--with-pam \
 		--with-openssl \
 		--with-libxml \
 		--with-libxslt \
